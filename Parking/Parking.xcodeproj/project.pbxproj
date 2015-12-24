@@ -15,6 +15,8 @@
 		9B4460241C2C747000AED5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4460221C2C747000AED5AA /* LaunchScreen.storyboard */; };
 		9B44602F1C2C747000AED5AA /* ParkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B44602E1C2C747000AED5AA /* ParkingTests.m */; };
 		9B44603A1C2C747000AED5AA /* ParkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4460391C2C747000AED5AA /* ParkingUITests.m */; };
+		9B4460491C2C779F00AED5AA /* CarPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4460481C2C779F00AED5AA /* CarPosition.m */; };
+		9B44604B1C2C791500AED5AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B44604A1C2C791500AED5AA /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		9B4460351C2C747000AED5AA /* ParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4460391C2C747000AED5AA /* ParkingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkingUITests.m; sourceTree = "<group>"; };
 		9B44603B1C2C747000AED5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B4460471C2C779F00AED5AA /* CarPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarPosition.h; sourceTree = "<group>"; };
+		9B4460481C2C779F00AED5AA /* CarPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarPosition.m; sourceTree = "<group>"; };
+		9B44604A1C2C791500AED5AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B44604B1C2C791500AED5AA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 		9B4460081C2C747000AED5AA = {
 			isa = PBXGroup;
 			children = (
+				9B44604A1C2C791500AED5AA /* MapKit.framework */,
 				9B4460131C2C747000AED5AA /* Parking */,
 				9B44602D1C2C747000AED5AA /* ParkingTests */,
 				9B4460381C2C747000AED5AA /* ParkingUITests */,
@@ -110,6 +117,8 @@
 				9B4460221C2C747000AED5AA /* LaunchScreen.storyboard */,
 				9B4460251C2C747000AED5AA /* Info.plist */,
 				9B4460141C2C747000AED5AA /* Supporting Files */,
+				9B4460471C2C779F00AED5AA /* CarPosition.h */,
+				9B4460481C2C779F00AED5AA /* CarPosition.m */,
 			);
 			path = Parking;
 			sourceTree = "<group>";
@@ -207,6 +216,11 @@
 				TargetAttributes = {
 					9B4460101C2C747000AED5AA = {
 						CreatedOnToolsVersion = 7.1.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					9B4460291C2C747000AED5AA = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -273,6 +287,7 @@
 				9B44601C1C2C747000AED5AA /* ViewController.m in Sources */,
 				9B4460191C2C747000AED5AA /* AppDelegate.m in Sources */,
 				9B4460161C2C747000AED5AA /* main.m in Sources */,
+				9B4460491C2C779F00AED5AA /* CarPosition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
