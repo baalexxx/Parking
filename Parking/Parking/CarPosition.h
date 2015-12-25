@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import <MapKit/MapKit.h>
-
+#import <CoreLocation/CoreLocation.h>
 
 
 @interface CarPosition : NSObject
 
- 
+
 
 @end

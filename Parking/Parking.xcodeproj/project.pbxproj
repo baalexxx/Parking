@@ -17,6 +17,7 @@
 		9B44603A1C2C747000AED5AA /* ParkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4460391C2C747000AED5AA /* ParkingUITests.m */; };
 		9B4460491C2C779F00AED5AA /* CarPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4460481C2C779F00AED5AA /* CarPosition.m */; };
 		9B44604B1C2C791500AED5AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B44604A1C2C791500AED5AA /* MapKit.framework */; };
+		9B44604D1C2C805900AED5AA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B44604C1C2C805900AED5AA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		9B4460471C2C779F00AED5AA /* CarPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarPosition.h; sourceTree = "<group>"; };
 		9B4460481C2C779F00AED5AA /* CarPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarPosition.m; sourceTree = "<group>"; };
 		9B44604A1C2C791500AED5AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9B44604C1C2C805900AED5AA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B44604D1C2C805900AED5AA /* CoreLocation.framework in Frameworks */,
 				9B44604B1C2C791500AED5AA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +90,7 @@
 		9B4460081C2C747000AED5AA = {
 			isa = PBXGroup;
 			children = (
+				9B44604C1C2C805900AED5AA /* CoreLocation.framework */,
 				9B44604A1C2C791500AED5AA /* MapKit.framework */,
 				9B4460131C2C747000AED5AA /* Parking */,
 				9B44602D1C2C747000AED5AA /* ParkingTests */,

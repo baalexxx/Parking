@@ -25,6 +25,9 @@
                                     <constraint firstAttribute="height" constant="44" id="dpW-6F-M89"/>
                                 </constraints>
                                 <state key="normal" title="Fix Car Position"/>
+                                <connections>
+                                    <action selector="fixPositionAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eAw-dj-bjX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>

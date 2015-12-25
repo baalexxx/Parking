@@ -8,7 +8,13 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+
+@interface ViewController () {
+    
+    CLLocationManager *locationManager;
+}
+
+
 
 @end
 
@@ -17,11 +23,69 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+    
+   
+    
+    
+    if (locationManager == nil)
+        locationManager = [[CLLocationManager alloc] init];
+    
+    if (status == kCLAuthorizationStatusNotDetermined) {
+        [locationManager requestWhenInUseAuthorization];
+    }
+    
+    
+    locationManager.delegate = self;
+    locationManager.distanceFilter = kCLDistanceFilterNone; // whenever we move
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest; // 100 m
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)fixPositionAction:(id)sender {
+    
+    
+    
+    
+    
+    
+    [locationManager startUpdatingLocation];
+}
+
+// Delegate method from the CLLocationManagerDelegate protocol.
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    
+    // If it's a relatively recent event, turn off updates to save power.
+    CLLocation* location = [locations lastObject];
+    NSString* coorString = [NSString stringWithFormat:@"latitude: %f longitude: %f", location.coordinate.latitude, location.coordinate.longitude];
+
+    NSLog(coorString, nil);
+    
+    NSDate* eventDate = location.timestamp;
+    
+    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+    
+    if (abs(howRecent) < 15.0) {
+        // If the event is recent, do something with it.
+        NSLog(@"latitude %+.6f, longitude %+.6f\n",
+              location.coordinate.latitude,
+              location.coordinate.longitude);
+    }
+    
+    [locationManager stopUpdatingLocation];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    
+    
+    NSLog(@"status");
+    
 }
 
 @end
