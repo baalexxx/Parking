@@ -50,11 +50,6 @@
 }
 - (IBAction)fixPositionAction:(id)sender {
     
-    
-    
-    
-    
-    
     [locationManager startUpdatingLocation];
 }
 
@@ -71,7 +66,7 @@
     
     NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
     
-    if (abs(howRecent) < 15.0) {
+    if (ABS(howRecent) < 15.0) {
         // If the event is recent, do something with it.
         NSLog(@"latitude %+.6f, longitude %+.6f\n",
               location.coordinate.latitude,
