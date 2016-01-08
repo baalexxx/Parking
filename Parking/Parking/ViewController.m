@@ -107,10 +107,10 @@
     
     [locationManager stopUpdatingLocation];
     
-
 }
 
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+    {
     
     
     NSLog(@"status = %i", (int)status);
