@@ -6,6 +6,7 @@
 //  Copyright © 2016 baevsoft. All rights reserved.
 //
 
+#import <MapKit/MapKit.h>
 #import "CurrentPositionProvider.h"
 
 @interface CurrentPositionProvider()
@@ -16,7 +17,7 @@
 -(instancetype) copyWithZone __attribute__((unavailable("init not available, call sharedInstance instead")));
 -(instancetype) copy __attribute__((unavailable("init not available, call sharedInstance instead")));
 
-+ (instancetype) sharedInstanse;
++(instancetype) sharedInstanse;
 
 @end
 
