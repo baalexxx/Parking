@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "TTLocationManager.h"
+
 
 @interface ViewController () {
     
@@ -26,7 +28,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    
+    TTLocationManager* locManager = [TTLocationManager sharedInstance];
+    [locManager startService];
     
     
    

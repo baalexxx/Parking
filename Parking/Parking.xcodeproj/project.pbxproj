@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72D3A6FF1C5565C700D37FD7 /* TTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D3A6FE1C5565C700D37FD7 /* TTLocationManager.m */; };
 		9B4460161C2C747000AED5AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4460151C2C747000AED5AA /* main.m */; };
 		9B4460191C2C747000AED5AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4460181C2C747000AED5AA /* AppDelegate.m */; };
 		9B44601C1C2C747000AED5AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B44601B1C2C747000AED5AA /* ViewController.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72D3A6FD1C5565C700D37FD7 /* TTLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLocationManager.h; sourceTree = "<group>"; };
+		72D3A6FE1C5565C700D37FD7 /* TTLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLocationManager.m; sourceTree = "<group>"; };
 		9B4460111C2C747000AED5AA /* Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4460151C2C747000AED5AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B4460171C2C747000AED5AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				9B4460181C2C747000AED5AA /* AppDelegate.m */,
 				9B44601A1C2C747000AED5AA /* ViewController.h */,
 				9B44601B1C2C747000AED5AA /* ViewController.m */,
+				72D3A6FD1C5565C700D37FD7 /* TTLocationManager.h */,
+				72D3A6FE1C5565C700D37FD7 /* TTLocationManager.m */,
 				9B44601D1C2C747000AED5AA /* Main.storyboard */,
 				9B4460201C2C747000AED5AA /* Assets.xcassets */,
 				9B4460221C2C747000AED5AA /* LaunchScreen.storyboard */,
@@ -299,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D3A6FF1C5565C700D37FD7 /* TTLocationManager.m in Sources */,
 				9B44601C1C2C747000AED5AA /* ViewController.m in Sources */,
 				9BA03B231C3F47480073E647 /* CurrentPositionProvider.m in Sources */,
 				9B4460191C2C747000AED5AA /* AppDelegate.m in Sources */,
